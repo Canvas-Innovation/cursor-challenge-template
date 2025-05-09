@@ -10,14 +10,27 @@ globs:
 
 When the user asks “scaffold React & Tailwind app with Vite”:
 
-- [1 SP] Run npm create vite@latest my‑app -- --template react-ts and cd my‑app
-- [1 SP] Install Tailwind dependencies: npm install -D tailwindcss postcss autoprefixer
-- [1 SP] Run npx tailwindcss init -p to generate tailwind.config.cjs & postcss.config.cjs
-- [1 SP] Configure tailwind.config.cjs with content: ["./index.html","./src/**/*.{js,ts,jsx,tsx}"]
-- [1 SP] In src/index.css, add Tailwind directives (@tailwind base; @tailwind components; @tailwind utilities;)
-- [1 SP] Import index.css in src/main.tsx
-- [1 SP] Create folder structure under src/: components/, pages/, assets/, styles/
-- [1 SP] Add ESLint + Prettier: npm install -D eslint prettier eslint-config-prettier eslint-plugin-react and generate config files
-- [1 SP] Add Husky pre‑commit hook for linting: npx husky-init && npm install
-- [1 SP] Create a LandingPage.tsx in pages/ with placeholder content
-- [1 SP] Write README.md with “npm install” / “npm run dev” instructions
+- Run npm create vite@latest my‑app -- --template react-ts and cd my‑app
+- Install Tailwind dependencies: npm install tailwindcss @tailwindcss/vite
+- Add tailwindcss to vite.config.ts:
+```
+import { defineConfig } from 'vite'
+import tailwindcss from '@tailwindcss/vite'
+export default defineConfig({
+  plugins: [
+    tailwindcss(),
+  ],
+})
+```
+- In src/index.css, add Tailwind import: 
+```
+@import "tailwindcss";
+```
+- Import index.css in src/main.tsx
+- Create folder structure under src/: components/, pages/, assets/, styles/
+- Add ESLint + Prettier: npm install -D eslint prettier eslint-config-prettier eslint-plugin-react and generate config files
+- Add Husky pre‑commit hook for linting: npx husky-init && npm install
+- Setup React Router: `npm install react-router-dom` and add basic `BrowserRouter` in `src/main.tsx`  
+- Create a `Layout.tsx` in `components/` with `<Outlet/>` for nested routes  
+- Add placeholder `LandingPage.tsx` in `pages/` and route at `/`
+- Write README.md with “npm install” / “npm run dev” instructions
