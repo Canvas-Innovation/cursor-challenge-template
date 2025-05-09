@@ -8,9 +8,7 @@ globs:
 "*.tsx"
 ---
 
-When the user asks “scaffold React & Tailwind app with Vite”:
-
-- Run npm create vite@latest my‑app -- --template react-ts and cd my‑app
+- Run npm create vite@latest -- --template react-ts
 - Install Tailwind dependencies: npm install tailwindcss @tailwindcss/vite
 - Add tailwindcss to vite.config.ts:
 ```
@@ -26,6 +24,8 @@ export default defineConfig({
 ```
 @import "tailwindcss";
 ```
+- Do NOT create a tailwind.config.js file
+- Do NOT install postcss or create a postcss.config.js file
 - Import index.css in src/main.tsx
 - Create folder structure under src/: components/, pages/, assets/, styles/
 - Add ESLint + Prettier: npm install -D eslint prettier eslint-config-prettier eslint-plugin-react and generate config files
