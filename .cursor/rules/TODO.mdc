@@ -1,15 +1,10 @@
 ---
 description: Fully scaffold a React + Tailwind CSS app using Vite, ready for landing‑page development
-alwaysApply: Manual
-globs:
-"*.js"
-"*.jsx"
-"*.ts"
-"*.tsx"
+globs: 
+alwaysApply: false
 ---
 
-- Run npm create vite@latest -- --template react-ts
-- Do NOT create a subdirectory for the project, just create the files in the root directory
+- Run npm create vite@latest ./ -- --template react-ts
 - Install Tailwind dependencies: npm install tailwindcss @tailwindcss/vite
 - Add tailwindcss to vite.config.ts:
 ```
@@ -35,3 +30,4 @@ export default defineConfig({
 - Create a `Layout.tsx` in `components/` with `<Outlet/>` for nested routes  
 - Add placeholder `LandingPage.tsx` in `pages/` and route at `/`
 - Write README.md with “npm install” / “npm run dev” instructions
+
