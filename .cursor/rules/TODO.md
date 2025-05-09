@@ -1,6 +1,6 @@
 ---
 description: Fully scaffold a React + Tailwind CSS app using Vite, ready for landing‑page development
-alwaysApply: true
+alwaysApply: Manual
 globs:
 "*.js"
 "*.jsx"
@@ -9,6 +9,7 @@ globs:
 ---
 
 - Run npm create vite@latest -- --template react-ts
+- Do NOT create a subdirectory for the project, just create the files in the root directory
 - Install Tailwind dependencies: npm install tailwindcss @tailwindcss/vite
 - Add tailwindcss to vite.config.ts:
 ```
