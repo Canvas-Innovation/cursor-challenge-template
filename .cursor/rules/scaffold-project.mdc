@@ -24,9 +24,8 @@ export default defineConfig({
 - Do NOT install postcss or create a postcss.config.js file
 - Import index.css in src/main.tsx
 - Create folder structure under src/: components/, pages/, assets/, styles/
-- Add ESLint + Prettier: npm install -D eslint prettier eslint-config-prettier eslint-plugin-react and generate config files
-- Add Husky pre‑commit hook for linting: npx husky-init && npm install
 - Setup React Router: `npm install react-router-dom` and add basic `BrowserRouter` in `src/main.tsx`  
+- Remember this is for a prototype so there's no need for extra tools like eslint or unit tests
 - Create a `Layout.tsx` in `components/` with `<Outlet/>` for nested routes  
 - Add placeholder `LandingPage.tsx` in `pages/` and route at `/`
 - Write README.md with “npm install” / “npm run dev” instructions
