@@ -10,35 +10,16 @@ For creating a comprehensive step-by-step work plan to build a prototype, given 
 ## Instructions
 
 When generating a work plan:
-
+- We are NOT creating production code, this is a time-limited demo session - we need to be finished in UNDER 1 hour.
+- Discuss the technologies required, but keep it as simple as possible, e.g., JS not TS, no Unit Tests, No extensive documentation. 
+- Discuss the features of the app with the user
+- Do not allow the user to be overly ambitious
+- Do not over-engineer this solution, getting something working is the most important.
 - Analyze the project brief thoroughly to identify all required features, components, and functionality
 - Break down the project into logical phases: setup, core functionality, UI/UX development, testing, and deployment
 - Generate a detailed step-by-step to-do list with each task being no larger than 1 story point 
 - Ensure steps follow the logical development flow a developer would take to build the prototype
 - Include both technical and design considerations for each phase
 - Identify potential dependencies between tasks and sequence accordingly
-- Reference [scaffold-project.mdc](mdc:.cursor/rules/scaffold-project.mdc) for specific project scaffolding steps 
-- Include steps for project documentation and developer handoff if applicable
-- Identify opportunities for incremental delivery of functionality
-
-## Example Structure
-
-```
-# Project Work Plan: [Project Name]
-
-## Phase 1: Project Setup
-1. [Task description] - Simple
-2. [Task description] - Medium
-
-## Phase 2: Core Functionality
-3. [Task description] - Complex
-4. [Task description] - Simple
-
-## Phase 3: UI Development
-...
-
-## Phase 4: Testing
-...
-
-## Phase 5: Deployment & Documentation
-...
+- Use checkboxes to mark tasks as done as you go
+- Ensure the user is happy with the plan before you write ANY code

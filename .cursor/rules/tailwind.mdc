@@ -1,0 +1,8 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+- Tailwind 4 is different to Tailwind 3 with breaking changes
+- Read up on the latest Tailwind 4 docs before trying to install it
+- If you cannot understand Tailwind 4, use Tailwind 3

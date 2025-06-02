@@ -1,0 +1,15 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+- We are NOT creating production code, this is a time-limited demo session - we need to be finished in UNDER 1 hour.
+- Do not install ESLint or similar
+- We are creating a rapid prototype
+- Discuss the technologies required, but keep it as simple as possible, e.g., JS not TS, no Unit Tests, No extensive documentation, no SSR, no databases
+- Do not allow the user to be overly ambitious
+- Do not over-engineer this solution, getting something working is the most important.
+- Update the WORK-PLAN with progress after each task
+- Do a few steps and stop and allow the user to check
+- Don't try and open the app, the user will check it
+
