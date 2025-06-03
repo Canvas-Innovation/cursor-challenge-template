@@ -3,6 +3,7 @@ description:
 globs: 
 alwaysApply: true
 ---
+- We are on Windows! Remember this when using the terminal. DO NOT use && in the terminal, use || instead.
 - We are NOT creating production code, this is a time-limited demo session - we need to be finished in UNDER 1 hour.
 - Do not install ESLint or similar
 - We are creating a rapid prototype
@@ -12,4 +13,5 @@ alwaysApply: true
 - Update the WORK-PLAN with progress after each task
 - Do a few steps and stop and allow the user to check
 - Don't try and open the app, the user will check it
+- Use Vite over Create React App
 
