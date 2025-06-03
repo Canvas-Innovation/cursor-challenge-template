@@ -4,6 +4,7 @@ globs:
 alwaysApply: true
 ---
 - We are on Windows! Remember this when using the terminal. DO NOT use && in the terminal, use || instead.
+- Use Command Prompt over Powershell for terminal commands.
 - We are NOT creating production code, this is a time-limited demo session - we need to be finished in UNDER 1 hour.
 - Do not install ESLint or similar
 - We are creating a rapid prototype
